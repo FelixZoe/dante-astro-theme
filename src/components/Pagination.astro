@@ -6,27 +6,35 @@ import IconButton from './IconButton.astro';
 const { page, class: className } = Astro.props;
 ---
 
-<nav aria-label="分页导航" class:list={['relative px-12 py-2 text-center', className]}>
+<nav
+    aria-label="分页导航"
+    class:list={[
+        'border-main bg-surface relative mx-auto max-w-sm rounded-full border px-14 py-3 text-center shadow-[0_18px_40px_-34px_var(--shadow-color)]',
+        className
+    ]}
+>
     {
         page.url.prev && (
             <IconButton
-                class="absolute top-1/2 left-0 -translate-y-1/2"
+                class="absolute top-1/2 left-1 -translate-y-1/2"
                 href={page.url.prev}
                 aria-label={`前往第 ${page.currentPage - 1} 页，共 ${page.lastPage} 页`}
             >
-                <ArrowLeft class="h-5 w-5 fill-current" />
+                <ArrowLeft class="h-4 w-4 fill-current" />
             </IconButton>
         )
     }
-    <span class="text-sm" aria-current="page">第 {page.currentPage} 页，共 {page.lastPage} 页</span>
+    <span class="text-muted-foreground text-sm font-medium" aria-current="page">
+        第 {page.currentPage} 页，共 {page.lastPage} 页
+    </span>
     {
         page.url.next && (
             <IconButton
-                class="absolute top-1/2 right-0 -translate-y-1/2"
+                class="absolute top-1/2 right-1 -translate-y-1/2"
                 href={page.url.next}
                 aria-label={`前往第 ${page.currentPage + 1} 页，共 ${page.lastPage} 页`}
             >
-                <ArrowRight class="h-5 w-5 fill-current" />
+                <ArrowRight class="h-4 w-4 fill-current" />
             </IconButton>
         )
     }
