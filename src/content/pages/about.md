@@ -1,43 +1,41 @@
 ---
-title: About
+title: 关于我
 seo:
-  title: About Me
-  description: Learn more about the person behind the website and embark on a journey of inspiration and shared experiences.
+  title: 关于 Felix
+  description: 了解 Felix 的技术学习和项目经历。
   image:
     src: '../../assets/images/about.jpg'
-    alt: A person sitting at a desk in front of a computer
+    alt: Felix
 ---
 
-![Alt text for image](../../assets/images/about.jpg)
+![Felix](../../assets/images/about.jpg)
 
-**Note!:** This about page is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+## Felix - AI Agent 开发方向学习者
 
-## Ethan Donovan - Web Developer based in Estonia
+你好，我是 Felix，一名计算机科学专业学生。
 
-**Greetings!** I'm Ethan Donovan, a passionate web developer residing in the picturesque landscapes of [Estonia](https://en.wikipedia.org/wiki/Estonia). With a keen eye for design and a love for crafting seamless digital experiences, I bring a unique blend of creativity and technical expertise to the world of web development.
+目前主要学习人工智能应用开发，关注 **AI Agent、Python、FastAPI、LangGraph 和智能应用系统**。
 
-## Skills and Expertise
+## 技术方向
 
-I specialize in front-end and back-end development, utilizing the latest technologies to build responsive and user-friendly websites. My proficiency includes **HTML**, **CSS**, **JavaScript**, and frameworks such as **Astro.js** for dynamic and interactive user interfaces. On the server side, I'm well-versed in Node.js and have experience with database management systems like MongoDB.
+我正在探索：
 
-## Innovation and Problem-Solving
+- AI Agent 架构设计
+- 大语言模型应用开发
+- 后端服务开发
+- 自动化工具和智能工作流
+- Web 交互体验
 
-I thrive on solving complex problems and transforming ideas into functional, elegant websites. Whether it's optimizing performance, implementing new features, or troubleshooting issues, I approach each challenge with enthusiasm and a commitment to delivering high-quality solutions.
+## 项目与实践
 
-## Global Perspective, Local Impact
+我喜欢通过实际项目提升能力，包括个人网站、AI 应用、自动化工具以及各种技术实验。
 
-Living in Estonia has not only influenced my appreciation for nature and culture but has also shaped my approach to web development. I understand the importance of creating digital solutions that resonate with local audiences while maintaining a global perspective.
+## 持续学习
 
-## Continuous Learning
+技术不断变化，我希望保持学习和实践，记录自己的成长过程，并分享有价值的经验。
 
-The dynamic nature of the tech industry inspires me to stay up-to-date with the latest trends and advancements. I'm always eager to expand my skill set and embrace emerging technologies that enhance the functionality and aesthetics of the websites I create.
+## 联系我
 
-## Collaboration and Communication
+如果你想交流技术、项目合作，欢迎通过邮箱联系我。
 
-I believe in the power of collaboration and effective communication. Whether working with clients, designers, or fellow developers, I value clear communication to ensure the success of every project.
-
-## Get in Touch
-
-Are you looking to elevate your online presence or bring your digital ideas to life? I'd love to hear from you! Feel free to reach out for collaboration, consultation, or just a friendly chat about all things web development.
-
-_Let's build something amazing together!_
+_Email: [zhuj3188@gmail.com](mailto:zhuj3188@gmail.com)_
