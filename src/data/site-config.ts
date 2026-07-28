@@ -3,86 +3,51 @@ import hero from '../assets/images/hero.jpg';
 import type { SiteConfig } from '../types';
 
 const siteConfig: SiteConfig = {
-    website: 'https://example.com',
+    website: 'https://root.mom',
     avatar: {
         src: avatar,
-        alt: 'Ethan Donovan'
+        alt: '朱佳乐'
     },
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    title: '朱佳乐',
+    subtitle: '计算机科学学生 · AI Agent 开发者',
+    description: '记录人工智能、Agent 开发、项目实践与技术成长。',
     image: {
         src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        alt: '朱佳乐个人网站'
     },
     headerNavLinks: [
-        {
-            text: 'Home',
-            href: '/'
-        },
-        {
-            text: 'Projects',
-            href: '/projects'
-        },
-        {
-            text: 'Blog',
-            href: '/blog'
-        },
-        {
-            text: 'Tags',
-            href: '/tags'
-        }
+        { text: '首页', href: '/' },
+        { text: '项目', href: '/projects' },
+        { text: '博客', href: '/blog' },
+        { text: '标签', href: '/tags' }
     ],
     footerNavLinks: [
-        {
-            text: 'About',
-            href: '/about'
-        },
-        {
-            text: 'Contact',
-            href: '/contact'
-        },
-        {
-            text: 'Terms',
-            href: '/terms'
-        },
-        {
-            text: 'Download theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
-        }
+        { text: '关于我', href: '/about' },
+        { text: '联系我', href: '/contact' },
+        { text: '服务条款', href: '/terms' },
+        { text: 'GitHub', href: 'https://github.com/FelixZoe' }
     ],
     socialLinks: [
-        {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
-        },
-        {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
-        },
-        {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
-        }
+        { text: 'GitHub', href: 'https://github.com/FelixZoe' }
     ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence.\nMy approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products.\nI have a profound appreciation for top-notch software, visual design, and the principles of product-led growth.\n\nFeel free to explore some of my coding endeavors on [GitHub](https://github.com/JustGoodUI/dante-astro-theme) or follow me on [Twitter/X](https://twitter.com/justgoodui).",
+        title: '你好，欢迎来到我的个人空间！',
+        text: '我是 **朱佳乐**，一名计算机科学专业学生，专注于 AI Agent、Python、FastAPI 和智能应用开发。\n\n这里记录我的技术学习、项目实践以及对未来技术的探索。',
         image: {
             src: hero,
-            alt: 'A person sitting at a desk in front of a computer'
+            alt: '个人头像'
         },
         actions: [
             {
-                text: 'Get in Touch',
+                text: '联系我',
                 href: '/contact'
             }
         ]
     },
     subscribe: {
-        enabled: true,
-        title: 'Subscribe to Dante Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
+        enabled: false,
+        title: '订阅博客更新',
+        text: '获取最新文章和项目动态。',
         form: {
             action: '#'
         }
