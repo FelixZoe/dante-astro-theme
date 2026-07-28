@@ -1,52 +1,56 @@
 ---
-title: Terms of Service
+title: 服务条款
 seo:
-  title: Terms of Service
-  description: Explore the terms and conditions of Dante website for a clear understanding of guidelines and responsibilities.
+  title: Felix 网站服务条款
+  description: 了解访问和使用 Felix 个人网站时适用的规则、权利、责任与免责声明。
 ---
 
-**Last updated on January 11, 2026**
+**最后更新时间：2026年1月11日**
 
-These Terms of Service ("Terms") govern your access to and use of [Website Name] ("the Website") and any related services provided by [Website Owner/Company] ("we," "us," or "our"). Please read these Terms carefully before using the Website.
+欢迎访问 Felix 的个人网站（以下简称“本网站”）。本网站主要用于分享技术学习、项目实践与个人思考。访问或使用本网站，即表示你已阅读、理解并同意遵守以下服务条款。
 
-**1. Acceptance of Terms**
+**1. 接受条款**
 
-By accessing or using the Website, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms or the Privacy Policy, please do not use the Website.
+当你访问、浏览或使用本网站时，即视为你同意接受本条款的约束。若你不同意其中任何内容，请停止使用本网站。
 
-**2. Changes to Terms**
+**2. 条款更新**
 
-We reserve the right to modify, amend, or update these Terms at any time. Such changes will be effective upon posting on the Website. It is your responsibility to review these Terms regularly. Your continued use of the Website after any changes indicates your acceptance of the revised Terms.
+我可能根据网站功能、内容或相关规则的变化，对本条款进行修改。更新后的条款将在本页面发布，并自发布之日起生效。建议你定期查看本页面，以了解最新内容。
 
-**3. Use of the Website**
+**3. 网站使用规范**
 
-You agree to use the Website for lawful purposes and in a manner consistent with these Terms. You are responsible for any content you post or submit on the Website.
+你应当以合法、合理的方式使用本网站，不得利用本网站从事违法活动，不得尝试破坏网站安全、干扰正常运行，或以其他方式损害网站及其他访问者的权益。
 
-**4. Registration and Account**
+**4. 内容与知识产权**
 
-Certain areas of the Website may require registration or the creation of an account. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.
+除特别注明外，本网站中的原创文章、文字、页面设计及其他原创内容归 Felix 所有。未经许可，不得将相关内容用于商业转载、批量复制、冒充原创或其他侵犯知识产权的行为。
 
-**5. Content and Intellectual Property**
+在保留原作者署名和原文链接的前提下，可以合理引用少量内容用于学习、评论或非商业交流。引用第三方内容时，其权利仍归原权利人所有。
 
-The content on the Website, including text, graphics, logos, images, audio, video, software, and other materials, is owned or licensed by us and is protected by copyright and other intellectual property laws. You may not use, reproduce, or distribute the content without our prior written consent.
+**5. 用户提交内容**
 
-**6. Third-Party Links**
+当你通过电子邮件、联系表单或其他方式向本网站提交内容时，应确保相关内容合法、真实，且不会侵犯他人的隐私、著作权、商标权或其他合法权益。
 
-The Website may contain links to third-party websites or resources. We do not endorse and are not responsible for the content, products, or services provided by third parties. Your use of such websites is at your own risk.
+**6. 第三方链接**
 
-**7. Termination**
+本网站可能包含指向 GitHub、Vercel 或其他第三方网站的链接。这些网站由相应第三方独立运营，我无法控制其内容、服务可用性或隐私政策。访问第三方网站所产生的风险由你自行承担。
 
-We may, at our sole discretion, terminate or suspend your access to the Website at any time and for any reason, without notice.
+**7. 网站可用性**
 
-**8. Disclaimer**
+我会尽力维护本网站的正常运行，但不保证网站始终可用、完全无误或不会中断。网站可能因维护、升级、网络故障、第三方服务异常或其他原因暂时无法访问。
 
-The Website and its content are provided on an "as is" and "as available" basis. We make no warranties or representations about the accuracy or completeness of the content. We do not guarantee that the Website will be error-free or uninterrupted.
+**8. 免责声明**
 
-**9. Limitation of Liability**
+本网站内容主要用于学习记录、经验分享和一般信息参考，不构成法律、医疗、投资或其他专业建议。你应根据自身情况独立判断，并对使用相关信息所产生的结果负责。
 
-To the fullest extent permitted by law, we shall not be liable for any direct, indirect, incidental, special, consequential, or exemplary damages, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses, arising out of or in connection with the use or inability to use the Website.
+**9. 责任限制**
 
-**10. Governing Law**
+在适用法律允许的范围内，对于因访问、使用或无法使用本网站，以及因依赖网站内容而产生的直接或间接损失，我不承担责任。
 
-These Terms are governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of laws principles. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts of [Your Jurisdiction].
+**10. 联系方式**
 
-_Thank you for reading our Terms of Service. By using the Website, you agree to be bound by these Terms._
+如对本条款或网站内容有疑问，可通过以下邮箱联系：
+
+**zhuj3188@gmail.com**
+
+_感谢你访问 Felix 的个人网站。继续使用本网站，即表示你同意遵守以上服务条款。_
