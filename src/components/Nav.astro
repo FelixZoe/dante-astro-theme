@@ -6,38 +6,40 @@ import siteConfig from '../data/site-config';
 const navLinks = siteConfig.headerNavLinks ?? [];
 ---
 
-<nav class="relative min-h-10 pt-4 pb-12 sm:min-h-14 sm:pb-20 md:pt-8" aria-label="Primary navigation">
-    {
-        navLinks.length > 0 && (
-            <div class="relative mx-auto w-full max-w-7xl">
-                <button
-                    class="menu-toggle relative z-30 -ml-1 flex h-8 w-8 cursor-pointer items-center justify-center md:hidden"
-                    aria-label="打开菜单"
-                    aria-expanded="false"
-                    aria-controls="menu-items"
-                >
-                    <span class="menu-toggle-icon relative h-px w-6 bg-current" />
-                </button>
-                <ul
-                    id="menu-items"
-                    class="menu max-md:bg-main max-md:border-main flex gap-8 lg:gap-10 max-md:absolute max-md:-top-2.5 max-md:-left-2.5 max-md:z-20 max-md:max-w-64 max-md:flex-col max-md:gap-1 max-md:border max-md:border-dashed max-md:px-3 max-md:pt-16 max-md:pb-10"
-                >
-                    {navLinks.map((link) => (
-                        <li class="py-1">
-                            <NavLink
-                                class="text-main font-serif text-xl leading-none hover:underline hover:decoration-1 hover:underline-offset-4 md:text-lg lg:text-xl"
-                                href={link.href}
-                            >
-                                {link.text}
-                            </NavLink>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        )
-    }
-    <div class="absolute top-4 right-0 z-10 md:top-8">
-        <ThemeToggle />
+<nav
+    class="site-nav sticky top-0 z-50 -mx-4 mb-10 px-4 sm:-mx-6 sm:px-6 lg:-mx-10 lg:px-10"
+    aria-label="主导航"
+>
+    <div class="relative mx-auto flex min-h-16 w-full max-w-6xl items-center justify-between">
+        {
+            navLinks.length > 0 && (
+                <>
+                    <button
+                        class="menu-toggle relative z-50 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full md:hidden"
+                        aria-label="打开菜单"
+                        aria-expanded="false"
+                        aria-controls="menu-items"
+                    >
+                        <span class="menu-toggle-icon relative h-px w-5 bg-current" />
+                    </button>
+                    <ul
+                        id="menu-items"
+                        class="menu border-main bg-surface absolute top-[calc(100%+0.75rem)] right-0 left-0 z-40 flex flex-col gap-1 rounded-2xl border p-3 shadow-2xl md:static md:z-auto md:flex md:flex-row md:items-center md:gap-1 md:border-0 md:bg-transparent md:p-0 md:shadow-none"
+                    >
+                        {navLinks.map((link) => (
+                            <li>
+                                <NavLink class="nav-item w-full text-base md:w-auto md:text-[17px] lg:text-lg" href={link.href}>
+                                    {link.text}
+                                </NavLink>
+                            </li>
+                        ))}
+                    </ul>
+                </>
+            )
+        }
+        <div class="ml-auto md:ml-4">
+            <ThemeToggle />
+        </div>
     </div>
 </nav>
 
@@ -46,45 +48,62 @@ const navLinks = siteConfig.headerNavLinks ?? [];
 
     @media (max-width: 767px) {
         .menu {
-            @apply invisible opacity-0;
-            width: calc(100% + 1.25rem);
+            @apply invisible pointer-events-none -translate-y-2 opacity-0;
+            transition:
+                opacity 180ms ease,
+                transform 180ms ease,
+                visibility 180ms ease;
         }
+
         .menu.is-visible {
-            @apply visible opacity-100;
-            transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+            @apply visible pointer-events-auto translate-y-0 opacity-100;
         }
+
+        .menu-toggle {
+            color: var(--text-main);
+            background: var(--surface);
+            border: 1px solid var(--border-main);
+        }
+
         .menu-toggle-icon {
-            transition: width 0.1s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+            transition: width 0.12s ease 0.18s;
         }
+
         .menu-toggle.is-active .menu-toggle-icon {
             @apply w-0;
-            transition: width 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: width 0.12s ease;
         }
-        .menu-toggle-icon:before,
-        .menu-toggle-icon:after {
-            @apply absolute top-0 left-1/2 h-px w-6 origin-center -translate-x-1/2 bg-current;
+
+        .menu-toggle-icon::before,
+        .menu-toggle-icon::after {
+            @apply absolute top-0 left-1/2 h-px w-5 origin-center -translate-x-1/2 bg-current;
             content: '';
             transition:
-                rotate 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-                margin 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+                rotate 0.18s ease,
+                margin 0.18s ease 0.12s;
         }
-        .menu-toggle-icon:before {
+
+        .menu-toggle-icon::before {
             @apply -mt-1.5;
         }
-        .menu-toggle-icon:after {
+
+        .menu-toggle-icon::after {
             @apply mt-1.5;
         }
-        .menu-toggle.is-active .menu-toggle-icon:before,
-        .menu-toggle.is-active .menu-toggle-icon:after {
+
+        .menu-toggle.is-active .menu-toggle-icon::before,
+        .menu-toggle.is-active .menu-toggle-icon::after {
             @apply mt-0;
             transition:
-                margin 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.1s,
-                rotate 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+                margin 0.15s ease,
+                rotate 0.18s ease 0.12s;
         }
-        .menu-toggle.is-active .menu-toggle-icon:before {
+
+        .menu-toggle.is-active .menu-toggle-icon::before {
             @apply rotate-45;
         }
-        .menu-toggle.is-active .menu-toggle-icon:after {
+
+        .menu-toggle.is-active .menu-toggle-icon::after {
             @apply -rotate-45;
         }
     }
@@ -94,6 +113,7 @@ const navLinks = siteConfig.headerNavLinks ?? [];
     function menuToggle() {
         const menu = document.querySelector('.menu');
         const menuToggleBtn = document.querySelector('.menu-toggle');
+
         menuToggleBtn?.addEventListener('click', () => {
             const isMenuExpanded = menuToggleBtn.getAttribute('aria-expanded') === 'true';
             menuToggleBtn.classList.toggle('is-active');
@@ -102,6 +122,7 @@ const navLinks = siteConfig.headerNavLinks ?? [];
             menu?.classList.toggle('is-visible');
         });
     }
+
     menuToggle();
     document.addEventListener('astro:after-swap', menuToggle);
 </script>
