@@ -1,14 +1,16 @@
 ---
-title: Get in touch
+title: 联系我
 seo:
-  title: Contact
-  description: Get in touch through email or social media! Let me know how I can help.
+  title: 联系我
+  description: 通过邮箱或社交平台联系 Felix。
 ---
 
-Thank you for reaching out! Whether you have a question, a suggestion, or just want to share your thoughts, I'm all ears. Feel free to get in touch through any of the methods below:
+欢迎联系我！如果你有问题、建议，或者想交流技术项目，可以通过下面方式找到我。
 
-_Email:_
-Feel free to drop me an email at [example@example.com](mailto:example@example.com), and I'll do my best to respond as soon as possible.
+_邮箱：_
 
-_Social Media:_
-Connect with me on social media as well. Find me on [Twitter](https://twitter.com) or [LinkedIn](https://www.linkedin.com/).
+你可以发送邮件到 [zhuj3188@gmail.com](mailto:zhuj3188@gmail.com)，我会尽快回复。
+
+_社交平台：_
+
+你可以通过 GitHub 了解我的项目和代码。
