@@ -2,27 +2,27 @@
 import siteConfig from '../data/site-config';
 import CustomImage from './CustomImage.astro';
 
-const titleClass = 'text-theme-foreground font-serif text-2xl leading-tight font-medium sm:text-3xl';
+const titleClass = 'font-sans text-lg leading-tight font-semibold tracking-tight sm:text-xl';
 ---
 
-<header class="mx-auto mb-12 flex w-full max-w-5xl items-center gap-4 sm:mb-16">
+<header class="identity-strip mx-auto mb-8 flex w-full max-w-6xl items-center gap-4 rounded-2xl px-4 py-3 sm:mb-10 sm:px-5 sm:py-4">
     {
         siteConfig.avatar?.src && (
-            <a href="/">
+            <a class="shrink-0 rounded-full" href="/" aria-label="返回首页">
                 <CustomImage
-                    class="aspect-square w-16 rounded-full object-cover sm:w-20"
+                    class="aspect-square w-14 rounded-full object-cover ring-2 ring-accent-soft sm:w-16"
                     {...siteConfig.avatar}
                     loading="eager"
                     fetchpriority="high"
-                    width={80}
-                    height={80}
-                    widths={[80, 160]}
-                    sizes="80px"
+                    width={64}
+                    height={64}
+                    widths={[64, 128]}
+                    sizes="64px"
                 />
             </a>
         )
     }
-    <div class="grow">
+    <div class="min-w-0 grow">
         {
             siteConfig.avatar?.src ? (
                 <p class={titleClass}>{siteConfig.title}</p>
@@ -32,6 +32,13 @@ const titleClass = 'text-theme-foreground font-serif text-2xl leading-tight font
                 </a>
             )
         }
-        {siteConfig.subtitle && <p class="text-sm leading-tight">{siteConfig.subtitle}</p>}
+        {
+            siteConfig.subtitle && (
+                <p class="text-muted-foreground mt-1 flex items-center gap-2 truncate text-sm leading-tight">
+                    <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true" />
+                    {siteConfig.subtitle}
+                </p>
+            )
+        }
     </div>
 </header>
