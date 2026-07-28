@@ -30,9 +30,9 @@ html.dark {
 }
 html.dark {
     --text-main: #d6e0e2;
-    --bg-main: #162a2b;
-    --bg-muted: #1c3537;
-    --border-main: #d6e0e2;
+    --bg-main: #171717;
+    --bg-muted: #242424;
+    --border-main: #f2f1ec;
 }
 */
 
@@ -51,6 +51,11 @@ html.dark {
     --border-main: #f3efe6;
 }
 */
+
+/* Prevent page-to-page horizontal layout shift caused by scrollbar changes */
+html {
+    overflow-y: scroll;
+}
 
 @theme inline {
     --font-sans: 'Inter Variable', sans-serif;
