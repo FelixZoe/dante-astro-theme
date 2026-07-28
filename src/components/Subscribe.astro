@@ -11,7 +11,7 @@ if (!subscribe?.enabled || !subscribe?.form?.action) {
 }
 ---
 
-<section class:list={['preview-card flex flex-col items-center gap-3 rounded-[2rem] px-6 py-12 text-center sm:px-12 sm:py-16', className]}>
+<section class:list={['bg-accent-soft flex flex-col items-center gap-3 rounded-[2rem] px-6 py-12 text-center sm:px-12 sm:py-16', className]}>
     <p class="eyebrow">订阅更新</p>
     {subscribe.title && <h2 class="w-full max-w-2xl font-serif text-3xl leading-tight font-medium tracking-[-0.025em] sm:text-4xl">{subscribe.title}</h2>}
     {subscribe.text && <p class="text-muted-foreground w-full max-w-xl text-sm leading-relaxed sm:text-base">{subscribe.text}</p>}
@@ -29,7 +29,7 @@ if (!subscribe?.enabled || !subscribe?.form?.action) {
             required
             autocomplete="email"
             placeholder="请输入邮箱地址"
-            class="border-main bg-surface text-main placeholder:text-muted-foreground h-11 w-full rounded-full border px-5 py-2 text-sm transition focus:border-accent focus:outline-none"
+            class="bg-surface text-main placeholder:text-muted-foreground h-11 w-full rounded-full px-5 py-2 text-sm shadow-[0_8px_24px_-20px_var(--shadow-color)] transition focus:outline-none focus:ring-2 focus:ring-accent"
             aria-label="邮箱地址"
         />
         {subscribe.form.hiddenFields?.map((field) => <input type="hidden" name={field.name} value={field.value} />)}
