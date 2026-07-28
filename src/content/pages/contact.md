@@ -1,7 +1,7 @@
 ---
-title: 联系我
+title: 联系 Felix
 seo:
-  title: 联系我
+  title: 联系 Felix
   description: 通过邮箱或社交平台联系 Felix。
 ---
 
